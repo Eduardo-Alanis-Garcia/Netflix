@@ -32,5 +32,4 @@ peliculas |>
 ##Cuantos tv_show añadio cada plataforma por año?
 tv_show |>
   dplyr::group_by(plataforma, anio_added) |>
-  dplyr::summarise(cantidad = dplyr::n(), .groups = "drop") |>
-  print(n = 100)
+  dplyr::summarise(cantidad = dplyr::n(), .groups = "drop")
